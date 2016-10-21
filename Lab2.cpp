@@ -5,6 +5,7 @@ using namespace std;
 
 int MetodoDivisor(int);
 
+
 int main(){
 
 	int opcion = 0;
