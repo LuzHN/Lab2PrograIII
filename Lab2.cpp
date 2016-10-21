@@ -9,7 +9,10 @@ int main(){
 
 	int opcion = 0;
 
-	while(opcion >= 0 && opcion < 5){
+
+	
+
+	while(opcion >= 0 && opcion < 4){
 		cout<< "Ingrese opcion: " << endl << "1. Ej 1" << endl << "2. Ej 2" << endl << "3. Ej3." << endl << "4. Salir" << endl;
 		cin >> opcion;
 
@@ -24,6 +27,7 @@ int main(){
 			    for(int i = 0; i < r.size(); i++){
 			        arr[i] = r[i]-48;
 			    }
+
 			    int menor = 0;
 			    int mayor = 0;
 			    
@@ -140,7 +144,50 @@ int main(){
 					divisor = divisor + arr[i];
 				}
 
-				//a la pija 
+				int division = numerousuario / divisor;
+				
+				int esFuerte = MetodoDivisor(division);
+
+
+
+				if(esFuerte > 1){
+					cout<< endl << "El numero no es fuerte" << endl;
+				} else if (esFuerte == 1){
+					cout<< endl <<"El numero es fuerte" << endl;
+				}
+
+				int verificartruncado = 0;
+
+				for (int i = numero.size(); i > 0; --i)
+				{
+					arr[i] = 100;
+
+					string n =  "";
+
+					for (int i = 0; i < numero.size(); ++i)
+					{
+						if(arr[i] == 100){
+
+						} else{
+							n = n + std::to_string(arr[i]);
+							int num = 0;
+							for (int i = 0; i < n.size(); ++i)
+							{
+								num = num + n[i] - 48;
+
+							}
+
+							int numeroGrande = atoi(n.c_str());
+
+							if(numeroGrande % num == 0){
+								cout<< "El numero truncado " << numeroGrande << " es numero Harshad" << endl;
+							}
+
+						}
+					}
+				}
+
+
 			}
 		}
     
