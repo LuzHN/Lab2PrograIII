@@ -5,18 +5,19 @@ using namespace std;
 
 int MetodoDivisor(int);
 
-
-
 int main(){
 
 	int opcion = 0;
+
+
+	
 
 	while(opcion >= 0 && opcion < 5){
 		cout<< "Ingrese opcion: " << endl << "1. Ej 1" << endl << "2. Ej 2" << endl << "3. Ej3." << endl << "4. Salir" << endl;
 		cin >> opcion;
 
 		switch(opcion){
-			case 1:{ 
+			case 1:{
 				string r = "";
     			cout<< "Ingrese numero:";
     			cin >> r;
@@ -29,6 +30,7 @@ int main(){
 
 			    int menor = 0;
 			    int mayor = 0;
+			    
 			   	for (int i = 0; i < r.size(); ++i)
 			   	{
 			   		if(mayor < arr[i]){
@@ -122,9 +124,12 @@ int main(){
 
 			}
 			case 3:{
+				
 				string numero = "";
 				cout << "Ingrese numero: ";
 				cin >> numero;
+				int numerousuario = atoi(numero.c_str());
+
 				int arr[numero.size()];
 
 				for (int i = 0; i < numero.size(); ++i)
@@ -139,8 +144,7 @@ int main(){
 					divisor = divisor + arr[i];
 				}
 
-			
-				
+				//a la pija 
 			}
 		}
     
@@ -150,6 +154,7 @@ int main(){
 	}
 	return 0;
 }
+
 
 
 int MetodoDivisor(int x){
