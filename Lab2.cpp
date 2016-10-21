@@ -14,7 +14,7 @@ int main(){
 		cin >> opcion;
 
 		switch(opcion){
-			case 1:{
+			case 1:{ 
 				string r = "";
     			cout<< "Ingrese numero:";
     			cin >> r;
@@ -27,7 +27,6 @@ int main(){
 
 			    int menor = 0;
 			    int mayor = 0;
-			    
 			   	for (int i = 0; i < r.size(); ++i)
 			   	{
 			   		if(mayor < arr[i]){
