@@ -24,7 +24,6 @@ int main(){
 			    for(int i = 0; i < r.size(); i++){
 			        arr[i] = r[i]-48;
 			    }
-
 			    int menor = 0;
 			    int mayor = 0;
 			    
