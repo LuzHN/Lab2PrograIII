@@ -141,6 +141,7 @@ int main(){
 					divisor = divisor + arr[i];
 				}
 
+			
 				
 			}
 		}
@@ -151,6 +152,7 @@ int main(){
 	}
 	return 0;
 }
+
 
 int MetodoDivisor(int x){
 	int contador = 0;
