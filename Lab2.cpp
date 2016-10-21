@@ -9,7 +9,6 @@ int main(){
 
 	int opcion = 0;
 
-
 	
 
 	while(opcion >= 0 && opcion < 5){
