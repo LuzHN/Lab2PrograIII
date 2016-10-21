@@ -9,9 +9,6 @@ int main(){
 
 	int opcion = 0;
 
-
-	
-
 	while(opcion >= 0 && opcion < 5){
 		cout<< "Ingrese opcion: " << endl << "1. Ej 1" << endl << "2. Ej 2" << endl << "3. Ej3." << endl << "4. Salir" << endl;
 		cin >> opcion;
